@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Budget Application</title>
+    <style>
+        .b-border{
+            border-left: 5px solid #5D3FD3;
+            border-right: 5px solid #5D3FD3;
+        }
+        .b-border i{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center" style="color: #5D3FD3; padding: 30px;">Budget Application</h1>
+            <!-- Budget and Expences -->
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 shadow-lg">
+                        <form class="p-3">
+                            <h4>Budget</h4>
+                            <input type="number" placeholder="Enter Total Amount" class="form-control mt-3" id="budget">
+                            <button class="btn text-white mt-3" style="background-color: #5D3FD3;" id="budget-btn">set Budget</button>
+                        </form>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 shadow-lg">
+                        <form class="p-3">
+                            <h4>Expences</h4>
+                            <input type="text" placeholder="Enter Title of Product" class="form-control mt-3" id="title">
+                            <input type="number" placeholder="Enter Title of Cost" class="form-control mt-3" id="cost">
+                            <button class="btn text-white mt-3" style="background-color: #5D3FD3;" id="expences-btn">Check Amount</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- calculate of Balance -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-4 mt-4 rounded-4" style="background-color: #5D3FD3;">
+                <div class="row">
+                    <div class="col-md-4 text-center text-white">
+                        <h5>Total Budget</h5>
+                        <p id="total-budget">0</p>
+                    </div>
+                    <div class="col-md-4 text-center text-white">
+                        <h5>Total Expences</h5>
+                        <p id="expences">0</p>
+                    </div>
+                    <div class="col-md-4 text-center text-white">
+                        <h5>Total Balance</h5>
+                        <p id="balance">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Expences List -->
+        <div class="row mt-3">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 shadow-lg">
+                <h1>Expences List</h1>
+                <div id="expences-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
+            
